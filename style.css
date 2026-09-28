@@ -1,0 +1,53 @@
+body {
+    padding: 20px;
+    height: 500px;
+    width: 1300;
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+
+.box {
+
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    left: 0;
+    animation-name: box;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate reverse;
+}
+
+@keyframes box {
+
+    0% {
+        transform: translate(0, 0);
+        background-color: red;
+    }
+
+    25% {
+        transform: translate(calc(100vw - 100px), 0);
+        background-color: pink;
+    }
+
+    50% {
+        transform: translate(calc(100vw - 100px), calc(100vh - 100px));
+        background-color: black;
+    }
+
+    75% {
+        transform: translate(0, calc(100vh - 100px));
+        background-color: orange;
+    }
+
+    100% {
+        transform: translate(0, 0);
+        background-color: aqua;
+    }
+
+
+
+}
